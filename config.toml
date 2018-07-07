@@ -1,0 +1,217 @@
+# Page settings
+
+baseurl = "http://example.org/"
+languageCode = "en-us"
+title = "John Doe Resume"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+publishDir = "docs"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-6.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Boyou Zhou"
+        tagline = "Security Researcher"
+        avatar = "output.jpg"
+        # avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: bobzhou@bu.edu"
+        title = "bobzhou@bu.edu"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+1234567890"
+        title = "+EMAIL-TO-ASK"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//cv.boyouz.com"
+        title = "cv.boyouz.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/boyou-zhou-87272480"
+        title = "linkedin.com/in/boyou-zhou-87272480"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/byzhou"
+        title = "github.com/byzhou"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/byzhou41"
+        title = "@byzhou41"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "PhD in Computer Engineering"
+        college = "Boston University"
+        dates = "2013 - 2019"
+
+        [[params.education.list]]
+        degree = "BSc in Communication Engineering"
+        college = "Southeast University"
+        dates = "2009 - 2013"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Chinese"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Hiking"
+
+        [[params.interests.list]]
+        interest = "Swimming"
+
+        [[params.interests.list]]
+        interest = "Cooking"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summary** I am a Ph.D Student in Integrated Circuits & System Group of Electrical and Computer Engineering in Boston University. My research interests are Computer System Security. My target graduation time is Jan 2019."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Research Assistant"
+        dates = "2013 - Present"
+        company = "Boston University"
+        details = "**Current research work** I am currently working on the hardware-assisted Control Flow Integrity (CFI). CFI enforce the program execution path consistent with the static analytical results, which provides protection for the programs from attacks like ROP (Return-oriented Programming).  We focus on the RISCV evaluation platform to engineer CFI components for research community."
+
+        [[params.jobs.list]]
+        position = "Internship"
+        dates = "2016"
+        company = "Qualcomm"
+        details = "**Internship work** I implemented a Digital Signal Processing Module in the chip design. I modeled my signal processing in Python with the builder design pattern. My model brought the flexibility into parameter changing and future developments. In addition to designing the models, I also provided the websites for documenting the tools during the developments. Meanwhile, I designed a tool for Verilog automatic connection using Python and other scripting languages."
+
+        [[params.jobs.list]]
+        position = "Internship"
+        dates = "2014,2015"
+        company = "Analog Devices Inc."
+        details = "**Internship work** I mainly explored the Real Number Modeling in chip modeling and also board module modeling. I used Verilog, Verilog-ams, and SystemVerilog to module the current and voltage behaviors."
+
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**My past projects and related publications** During my 5 1/4 year graduate school years, I have worked on a variety of projects related to security system design. Below is the listed work and publications."
+
+        [[params.projects.list]]
+        title = "Hardware Performance Counter Malware Detection "
+        url = "https://github.com/bu-icsg/Hardware_Performance_Counters_Can_Detect_Malware_Myth_or_Fact"
+		tagline = "**BEST PAPER in AsiaCCS 2018** To evaluate the feasibility of malware detection using Hardware Performance Counters (HPC), I measured the HPC traces on programs and malware, including 1k malware and 1k benignware. To perform the measurements, I use Rabbitmq to orchestra the commnunications in a cluster of machines. I performed data analysis on these HPC values using various machine learning algorithms, such as K Nearest Neighbors (KNN), Decision Tree (DT), Multilayer Perceptrons (MLP), Naive Bayes, AdaBoost and Random Forest (RF). By applying these machine learning algorithms, I evaluated the robustness of malware detection using these algorithms in cross-validations."
+
+        [[params.projects.list]]
+        title = "Gate Classification Through Near-IR Imaging"
+        url = "https://arxiv.org/abs/1605.09306"
+		pdf = "guest_talk.pdf"
+        tagline = "We propose optical backside imaging in Hardware Trojan Detection. We engineer optical structures in standard cells to expose different response in various gates. These response functions as the feature vectors for distinguish different gates. After the fabrication, we use machine learning algorithms to classify among different gates. Any modifications or replacement to these cells can be easily detected through optical imaging."
+
+
+        [[params.projects.list]]
+        title = "Hardware Assisted Encryption Acceleration"
+        url = "https://ieeexplore.ieee.org/abstract/document/8091062"
+        tagline = "I implemented AES, RSA, SHA cryptographic algorithms on FPGA and measured the speed of calculations."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "98%"
+                
+        [[params.skills.list]]
+        skill = "C/C++"
+        level = "93%"
+
+        [[params.skills.list]]
+        skill = "Verilog/Verilog-ams/System-Verilog"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "HTML & JAVASCRIPT & CSS"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Bash & Perl & Any Other Scripting"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
