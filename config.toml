@@ -1,8 +1,8 @@
 # Page settings
 
-baseurl = "http://example.org/"
+baseurl = "https://cv.boyozu.com/"
 languageCode = "en-us"
-title = "John Doe Resume"
+title = "Boyou Zhou Resume"
 theme = "hugo-orbit-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 publishDir = "docs"
