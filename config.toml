@@ -1,7 +1,7 @@
 # Page settings
 
 
-baseurl = "https://boyouz.com/"
+baseurl = "https://cv.boyouz.com/"
 languageCode = "en-us"
 title = "Boyou Zhou Resume"
 theme = "hugo-orbit-theme"
