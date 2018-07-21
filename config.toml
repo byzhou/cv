@@ -128,7 +128,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Career Profile"
-        summary = "**Summary** I am a Ph.D Student in Integrated Circuits & System Group of Electrical and Computer Engineering in Boston University. My research interests are Computer System Security. My target graduation time is Jan 2019."
+        summary = "**Summary** I am a Ph.D Student in Integrated Circuits and System Group of Electrical and Computer Engineering in Boston University.  My research focus is Computer Security. During my graduate school, I have worked on 3 projects, and currently on the 4th project. I have 3 internships with 2 companies. I am looking for a full-time job in the security area and my target graduation time is Jan 2019."
 
     # Experiences section
     [params.experiences]
@@ -140,19 +140,19 @@ disable404 = true
         position = "Research Assistant"
         dates = "2013 - Present"
         company = "Boston University"
-        details = "**Current research work** I am currently working on the hardware-assisted Control Flow Integrity (CFI). CFI enforce the program execution path consistent with the static analytical results, which provides protection for the programs from attacks like ROP (Return-oriented Programming).  We focus on the RISCV evaluation platform to engineer CFI components for research community."
+        details = "**Current research work** Control Flow Integrity (CFI) prevents the computer system from diverting control ow. Current commercially avail- able CFI enforcement are software-based techniques. All the hardware-assisted CFIs under research have low target precisions. I am working on developing the fine-grained CFI assisted by hardware, evaluated on RISCV evaluation platform."
 
         [[params.jobs.list]]
         position = "Internship"
         dates = "2016"
         company = "Qualcomm"
-        details = "**Internship work** I implemented a Digital Signal Processing Module in the chip design. I modeled my signal processing in Python with the builder design pattern. My model brought the flexibility into parameter changing and future developments. In addition to designing the models, I also provided the websites for documenting the tools during the developments. Meanwhile, I designed a tool for Verilog automatic connection using Python and other scripting languages."
+        details = "**Internship work** I implemented a Digital Signal Processing module in the touch-screen chip design. I modeled my signal processing in Python with the builder design pattern, to validate my digital design. The builder pattern in the digital design models helped the team to model other blocks, or re-model my design in the future. To facilitate the usability of my models and validations, I also provided the websites for documenting the tools during the developments.  During the integration, I designed a tool for Verilog automatic connection using Python and other scripting languages.  The tool can detect the connection between dierent blocks, and generate a higher level structure that connects each individual blocks. With this tool, the high-level block generation is automated without the risk of introducing manual errors."
 
         [[params.jobs.list]]
         position = "Internship"
         dates = "2014,2015"
         company = "Analog Devices Inc."
-        details = "**Internship work** I mainly explored the Real Number Modeling in chip modeling and also board module modeling. I used Verilog, Verilog-ams, and SystemVerilog to module the current and voltage behaviors."
+        details = "**Internship work** Real Number Modeling (RNM) is the technique to model analog blocks on the modular level, instead of continuous signal simulation. The benefits of RNM is to provide fast simulation, and direct integration with digital blocks. I mainly explored the Real Number Modeling in modeling ICs and also peripheral structures. I used Verilog, Verilog-ams, and SystemVerilog to model the current and voltage behaviors."
 
 
     # Projects section
@@ -160,7 +160,7 @@ disable404 = true
         enable = true
         icon = "fa-archive"
         title = "Projects"
-        intro = "**My past projects and related publications** During my 5 1/4 year graduate school years, I have worked on a variety of projects related to security system design. Below is the listed work and publications."
+        intro = "**My past projects and related publications** During my 5 1/4 year graduate school years, I have worked on a variety of projects related to computer system security design. Below is the listed work and publications."
 
         [[params.projects.list]]
         title = "Hardware Performance Counter Malware Detection "
