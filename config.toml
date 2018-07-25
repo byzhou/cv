@@ -32,7 +32,7 @@ disable404 = true
 
     # Profile section
     [params.profile]
-        name = "Boyou Zhou (周博猷)"
+        name = "Boyou Zhou"
         tagline = "Security Researcher"
         avatar = "output.jpg"
         # avatar = "profile.png"
@@ -72,10 +72,10 @@ disable404 = true
         title = "github.com/byzhou"
 
         [[params.contact.list]]
-        class = "twitter"
-        icon = "fa-twitter"
-        url = "//twitter.com/byzhou41"
-        title = "@byzhou41"
+        class = "gpg"
+        icon = "fa-lock"
+        url = "https://pgp.mit.edu/pks/lookup?op=get&search=0x920A748CB7A99302"
+        title = "GPG: CC43 E037 BDC3 9946 327A 2D61 920A 748C B7A9 9302"
 
     # Education section
     [params.education]
