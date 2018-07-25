@@ -74,7 +74,7 @@ disable404 = true
         [[params.contact.list]]
         class = "gpg"
         icon = "fa-lock"
-        url = "https://pgp.mit.edu/pks/lookup?op=get&search=0x920A748CB7A99302"
+        url = "https://flowcrypt.com/pub/bobzhou@bu.edu"
         title = "GPG: CC43 E037 BDC3 9946 327A 2D61 920A 748C B7A9 9302"
 
     # Education section
