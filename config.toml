@@ -80,7 +80,7 @@ disable404 = true
         [[params.contact.list]]
         class = "gpg bobzhouboyou@gmail.com"
         icon = "fa-lock"
-        url = "flowcrypt.com/pub/bobzhouboyou@gmail.com"
+        url = "https://flowcrypt.com/pub/bobzhouboyou@gmail.com"
         title = "GPG: 8177 0C6E C220 984F 5AF4 779F 346F 185E DB1E 4F4B"
 
     # Education section
