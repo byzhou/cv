@@ -1,0 +1,2 @@
+[submodule "themes/hugo-orbit-theme"]
+	url = git@github.com:byzhou/hugo-orbit-theme.git
